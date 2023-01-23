@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 
-@st.cache
+
 def detect_objects(our_image):
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
@@ -106,7 +106,7 @@ def object_main():
     st.title("Обнаружение объектов")
     st.write("<h6 style='text-align: center;'>YOLO или You Only Look Once — это популярная архитектура CNN, которая используется для распознавания объектов на изображении. В проекте использована YOLOv3 — усовершенствованная версия архитектуры YOLO. Основная особенность YOLOv3 состоит в том, что на выходе есть три слоя, каждый из которых расчитан на обнаружение объектов разного размера. Наибольшим преимуществом YOLO над другими архитектурами является скорость. Модели семейства YOLO исключительно быстры и намного превосходят R-CNN (Region-Based Convolutional Neural Network) и другие модели.</h6>", unsafe_allow_html = True)
     #st.image('yolo_1.png', width=350)
-    choice = st.radio("", ("Пример для демонстрации", "Выбрать изображение из коллекции"),label_visibility='collapsed')
+    choice = st.radio("Пример для демонстрации", "Выбрать изображение из коллекции")
     st.write()
 
     if choice == "Выбрать изображение из коллекции":
