@@ -2,6 +2,5 @@ pip == 22.3.1
 streamlit  == 1.17.0
 Pillow == 9.4.0
 numpy == 1.21.6
-matplotlib == 3.5.5
+matplotlib
 opencv-python-headless == 4.7.0.68
-pip == 22.3.1
