@@ -4,7 +4,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from PIL import Image
 
-
+@st.cache
 def detect_objects(our_image):
     st.set_option('deprecation.showPyplotGlobalUse', False)
 
